@@ -13,6 +13,8 @@ const Embed = () => {
                 id="tally-js"
                 src="https://tally.so/widgets/embed.js"
                 onLoad={() => {
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-expect-error
                     Tally.loadEmbeds();
                 }}
             />
